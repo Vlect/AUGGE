@@ -1,0 +1,71 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.hexagon{
+    position: absolute;
+    top: 60%;
+    left: -50px;
+    width: 100%;
+    animation: hexagonAnimation 30s linear 0s infinite alternate;
+    /* animation-iteration-count: infinite; */
+    z-index: 1;
+}
+.container .hexagon:nth-child(2){
+    top: 40%;
+    animation: hexagonAnimation 50s linear 0s infinite alternate-reverse;
+}
+@keyframes hexagonAnimation{
+    0%{
+        left: 200px;
+        top: 100px;
+        transform: rotate(10deg);
+    }
+    25%{
+        left: -100px;
+        top: 200px;
+        transform: rotate(50deg);
+    }
+    50%{
+        left: 200px;
+        top: 300px;
+        transform: rotate(190deg);
+    }
+    75%{
+        left: -180px;
+        top: 400px;
+        transform: rotate(270deg);
+    }
+    100%{
+        left: 200px;
+        top: 500px;
+        transform: rotate(360deg);
+    }
+    /* from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    } */
+}
+
+.hexBottom {
+  width: 0;
+  border-bottom: 50px solid rgba(99, 99, 99, 0.5);
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexMiddle {
+  width: 150px;
+  height: 84px;
+  background-color: rgba(99, 99, 99, 0.5);
+}
+
+.hexTop {
+  width: 0;
+  border-top: 50px solid rgba(99, 99, 99, 0.5);
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}

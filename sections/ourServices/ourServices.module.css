@@ -1,0 +1,220 @@
+.ourServicesSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 8;
+  padding-top: 80px;
+}
+
+.sectionInfo{
+  font-size: 14px;
+  text-align: center;
+  color:rgb(253, 195, 69,0.8);
+  /* z-index: 8; */
+}
+.sectionInfo h1{
+  color: white;
+}
+
+.serviceCards {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  z-index: 9;
+}
+
+/*////////////////////////////////////////*/
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 11;
+  top: 53%;
+}
+
+.leftButton {
+  width: 45px;
+  height: 50px;
+  position: relative;
+}
+.leftButtonArrow div {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 19px;
+  left: 14px;
+}
+.leftButtonArrow div:nth-child(2) {
+  top: 29px;
+  transform: rotate(45deg);
+}
+
+.rightButton {
+  width: 45px;
+  height: 50px;
+  position: relative;
+}
+.rightButtonArrow div {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 19px;
+  left: 16px;
+}
+.rightButtonArrow div:nth-child(2) {
+  top: 29px;
+  transform: rotate(-45deg);
+}
+/*////////////////////////////////////////*/
+
+/* .serviceCards div:nth-child(2) {
+  z-index: 10;
+  position: absolute;
+}
+
+.serviceCards div:nth-child(2) div {
+  width: 50px;
+  height: 50px;
+}
+
+.serviceCards div:nth-child(1),
+.serviceCards div:nth-child(3) {
+  width: 50%;
+  height: 300px;
+  z-index: 9;
+} */
+
+.serviceCard {
+  opacity: 0;
+  position: absolute;
+  transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 68%;
+  height: 350px;
+  background-color: white;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 14px;
+  z-index: 12;
+}
+.noActive{
+  opacity: 0.6;
+  position: absolute;
+  transform: translateX(100px);
+  z-index: 11;
+}
+.noActive:nth-child(even){
+  transform: translateX(-40px);
+}
+.noActive:nth-child(odd){
+  transform: translateX(40px);
+}
+.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.serviceText {
+  width: 80%;
+}
+
+.hexBottom {
+  width: 0;
+  border-bottom: 10px solid rgb(253, 195, 69);
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+}
+
+.hexMiddle {
+  width: 44px;
+  height: 30px;
+  background-color: rgb(253, 195, 69);
+}
+
+.hexTop {
+  width: 0;
+  border-top: 10px solid rgb(253, 195, 69);
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+}
+
+@media (orientation: landscape) {
+  /* .serviceCards {
+    margin-top: 100px;
+  } */
+  
+  .cardButtons{
+    top: 28%;
+  }
+
+  .serviceCards{
+    padding-bottom: 100px;
+  }
+
+  .serviceCard {
+    padding: 5px;
+    width: 65vw;
+    height: 100%;
+  }
+
+  /* .serviceCards div:nth-child(1),
+  .serviceCards div:nth-child(3) {
+    width: 60vh;
+    height: 60vh;
+    z-index: 9;
+  } */
+}
+
+/* .hexagon {
+    position: relative;
+    width: 100px; 
+    height: 57.74px;
+    background-color: #ffffff;
+    margin: 28.87px 0;
+    border-left: solid 5px #333333;
+    border-right: solid 5px #333333;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 70.71px;
+    height: 70.71px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 9.6447px;
+  }
+  
+  .hexagon:before {
+    top: -35.3553px;
+    border-top: solid 7.0711px #333333;
+    border-right: solid 7.0711px #333333;
+  }
+  
+  .hexagon:after {
+    bottom: -35.3553px;
+    border-bottom: solid 7.0711px #333333;
+    border-left: solid 7.0711px #333333;
+  } */

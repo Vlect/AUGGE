@@ -1,0 +1,269 @@
+.sectionInfo{
+  font-size: 14px;
+  text-align: center;
+  color:rgb(253, 195, 69,0.8);
+  margin-top: 100px;
+  z-index: -14;
+}
+.sectionInfo h1{
+  color: white;
+}
+.projects {
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+/*////////////////////////////////////////*/
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 11;
+  top: 46%;
+}
+
+.leftButton {
+  width: 45px;
+  height: 50px;
+  position: relative;
+}
+.leftButtonArrow div {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 19px;
+  left: 14px;
+}
+.leftButtonArrow div:nth-child(2) {
+  top: 29px;
+  transform: rotate(45deg);
+}
+
+.rightButton {
+  width: 45px;
+  height: 50px;
+  position: relative;
+}
+.rightButtonArrow div {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 19px;
+  left: 16px;
+}
+.rightButtonArrow div:nth-child(2) {
+  top: 29px;
+  transform: rotate(-45deg);
+}
+.hexBottomButton {
+  width: 0;
+  border-bottom: 10px solid rgb(253, 195, 69);
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+}
+
+.hexMiddleButton {
+  width: 44px;
+  height: 30px;
+  background-color: rgb(253, 195, 69);
+}
+
+.hexTopButton {
+  width: 0;
+  border-top: 10px solid rgb(253, 195, 69);
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+}
+/*////////////////////////////////////////*/
+
+.hexagonProject:nth-child(2){
+    position: absolute;
+    z-index: 2;
+}
+
+.hexagonProject {
+  opacity: 0;
+  transition-duration: 1s;
+  position: relative;
+  width: 190px;
+  height: 215px;
+}
+
+.noActive{
+  opacity: 0.6;
+  position: absolute;
+  transform: translateX(100px);
+  z-index: 10;
+}
+.noActive:nth-child(even){
+  transform: translateX(-40px);
+}
+.noActive:nth-child(odd){
+  transform: translateX(40px);
+}
+.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.2);
+  z-index: 11;
+}
+
+.hexagonImage {
+  position: absolute;
+  top: 37%;
+  left: 34%;
+}
+
+/* .hexagonProject:nth-child(2) .hexBottom{
+    border-bottom: 45px solid rgb(255, 255, 255);
+} 
+.hexagonProject:nth-child(2) .hexMiddle{
+    background-color: rgb(255, 255, 255);
+} 
+.hexagonProject:nth-child(2) .hexTop{
+    border-top: 45px solid rgb(255, 255, 255);
+}  */
+
+.hexBottom {
+  width: 0;
+  /* transform: rotate(-20deg); */
+  border-bottom: 45px solid rgba(255, 255, 255);
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+}
+
+.hexMiddle {
+  width: 190px;
+  /* transform: rotate(-20deg); */
+  height: 124px;
+  background-color: rgba(255, 255, 255);
+}
+
+.hexTop {
+  width: 0;
+  /* transform: rotate(-20deg); */
+  border-top: 45px solid rgba(255, 255, 255);
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+}
+
+.watchProject{
+    opacity: 0;
+    position: absolute;
+    width: 125px;
+    height: 55px;
+    margin: 20px 30px;
+    top: 250px;
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.watchProject a{
+  z-index: 100;
+}
+/* .noActiveWatchProject{
+  opacity: 0.6;
+  position: absolute;
+  transform: translateX(100px);
+  z-index: 11;
+}
+.noActiveWatchProject:nth-child(even){
+  transform: translateY(-0px);
+}
+.noActiveWatchProject:nth-child(odd){
+  transform: translateX(40px);
+} */
+.activeWatchProject{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+  z-index: 10;
+}
+
+.topLeft, .bottomRight{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    /* background: red; */
+}
+
+.topLeft{
+    top:-5px;
+    left: -18px;
+}
+.topLeft div:nth-child(1){
+    position: absolute;
+    top: 12px;
+    /* left: ; */
+    width: 0;
+  transform: rotate(-90deg);
+  border-top: 20px solid rgb(207, 206, 206);
+  border-left: 45px solid transparent;
+  /* border-right: 95px solid transparent; */
+}
+.topLeft div:nth-child(2){
+    position: absolute;
+    top: 16px;
+    left: 2px;
+    width: 0;
+  transform: rotate(-71deg);
+  border-top: 14px solid rgb(121, 120, 120);
+  border-left: 50px solid transparent;
+  /* border-right: 95px solid transparent; */
+}
+
+.bottomRight{
+    /* top:555px; */
+    left: 10px;
+    transform: rotate(180deg);
+}
+.bottomRight div:nth-child(1){
+    position: absolute;
+    top: 105px;
+    left: -5px;
+    width: 0;
+  transform: rotate(-90deg);
+  border-top: 20px solid rgb(207, 206, 206);
+  border-left: 45px solid transparent;
+  /* border-right: 95px solid transparent; */
+}
+.bottomRight div:nth-child(2){
+    position: absolute;
+    top: 108px;
+    left: -2px;
+    width: 0;
+  transform: rotate(-71deg);
+  border-top: 14px solid rgb(121, 120, 120);
+  border-left: 50px solid transparent;
+  /* border-right: 95px solid transparent; */
+}
+
+.bottomRight{
+    top:100px;
+}
+
+.watchProjectButton {
+  background: rgb(53, 53, 53);
+  color: white;
+  width: 120px;
+  height: 50px;
+  /* margin-top: 30px;
+  margin-left: 18%; */
+  border: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
+}
