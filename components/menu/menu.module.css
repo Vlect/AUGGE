@@ -57,3 +57,10 @@
     top: 90%;
   }
 }
+
+@media (max-height: 576px) and (orientation:landscape){
+  .menu {
+    top: 78%;
+    z-index: 20;
+  }
+}

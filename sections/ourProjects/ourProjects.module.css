@@ -2,7 +2,7 @@
   font-size: 14px;
   text-align: center;
   color:rgb(253, 195, 69,0.8);
-  margin-top: 100px;
+  margin-top: 60px;
   z-index: -14;
 }
 .sectionInfo h1{
@@ -26,8 +26,8 @@
   width: 100%;
   padding: 5px 8px;
   position: absolute;
-  z-index: 11;
-  top: 46%;
+  z-index: 14;
+  top: 40%;
 }
 
 .leftButton {
@@ -69,7 +69,7 @@
 }
 .hexBottomButton {
   width: 0;
-  border-bottom: 10px solid rgb(253, 195, 69);
+  border-bottom: 10px solid #ffc500;
   border-left: 22px solid transparent;
   border-right: 22px solid transparent;
 }
@@ -77,12 +77,12 @@
 .hexMiddleButton {
   width: 44px;
   height: 30px;
-  background-color: rgb(253, 195, 69);
+  background-color: #ffc500;
 }
 
 .hexTopButton {
   width: 0;
-  border-top: 10px solid rgb(253, 195, 69);
+  border-top: 10px solid #ffc500;
   border-left: 22px solid transparent;
   border-right: 22px solid transparent;
 }
@@ -164,7 +164,7 @@
     position: absolute;
     width: 125px;
     height: 55px;
-    margin: 20px 30px;
+    margin: 20px 5px;
     top: 250px;
     /* display: flex; */
     flex-direction: row;
@@ -266,4 +266,53 @@
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
+}
+
+@media (min-width: 768px) {
+  /* .serviceCard {
+    padding: 5px;
+    width: 30vw;
+    height: 80%;
+    margin-top: 110px;
+  } */
+  .cardButtons {
+    top: 40%;
+    z-index: 12;
+  }
+  .ourServicesSection{
+    padding-top: 30px;
+  }
+  .rightButton {
+    margin-right: 400px;
+  }
+  .leftButton {
+    margin-left: 400px;
+  }
+}
+
+@media (max-height: 576px) and (orientation:landscape) {
+  /* .serviceCard {
+    padding: 5px;
+    width: 30vw;
+    height: 80%;
+    margin-top: 110px;
+  } */
+  .sectionInfo{
+    margin-top: 0;
+  }
+  .projects {
+    margin-top: 60px;
+  }
+  .cardButtons {
+    top: 88%;
+  }
+  .ourServicesSection{
+    padding-top: 0px;
+  }
+  .rightButton {
+    margin-right: 100px;
+  }
+  .leftButton {
+    margin-left: 100px;
+  }
 }

@@ -24,8 +24,8 @@ const OurServices: React.FC<ourServices> = ({slides}) => {
   return (
     <div className={styles.ourServicesSection}>
       <div className={styles.sectionInfo}>
-        <h1>Our Services</h1>
-        <p>Dircover all we have to offer you!</p>
+        <h1>Nuestras Compañias</h1>
+        {/* <p>Nuestras compañias generan AUGGE inmobiliario</p> */}
       </div>
       <div className={styles.cardButtons}>
 

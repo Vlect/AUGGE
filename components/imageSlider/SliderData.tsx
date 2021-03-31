@@ -1,6 +1,6 @@
 export const OurServicesData = [
     {
-        title:"Inversiones",
+        title:"XIUDAD",
         image:"/images/ecomerceIcons/186.svg",
         description:"Hola",
     },

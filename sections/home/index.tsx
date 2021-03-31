@@ -11,10 +11,9 @@ const Home: React.FC<homeProps> = ({}) => {
       <div className={styles.background}>
         <div className={styles.homeContent}>
           <div className={styles.contentText}>
-            <p>Welcome</p>
+            <p>Bienvenidos</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Escribimos una nueva página de la estructura del desarrollo inmobiliario, bajo nuestro concepto PAGE (Proyectos, Autenticos-Genuinos-Extraordinarios). 
             </p>
           </div>
         </div>

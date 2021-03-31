@@ -89,3 +89,12 @@
     color:white;
     margin:0;
 }
+
+@media (min-width: 768px) and (orientation:landscape){
+    .form{
+        width: 50vw;
+    }
+    .label{
+        width: 26%;
+    }
+}

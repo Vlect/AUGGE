@@ -3,6 +3,7 @@ import Wrapper from '../components/wrapper';
 import Layout from './../components/layout';
 import Sections from './../sections';
 import styles from "./../styles/indexComponent.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,8 +12,19 @@ export default function Home() {
         <title>AUGGE</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"></meta>
       </Head>
       <Layout query=""/>
+      {/* <div
+        className={styles.fondoGlobal}
+      >
+        <Image 
+          src="/images/PAGE.svg"
+          width={300}
+          color="white"
+          height={300}
+        />
+      </div> */}
       {/* <div className={styles.backgroundDecorations}>
         <div className={styles.hexagon}>
           <div className={styles.hexBottom}></div>

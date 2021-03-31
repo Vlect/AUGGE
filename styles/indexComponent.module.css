@@ -1,3 +1,14 @@
+.fondoGlobal{
+    /* color: red; */
+    /* background-color: wheat; */
+    z-index: 1 !important;
+    /* position: absolute !important; */
+    top: -40px !important;
+    /* bottom: 0; */
+    left: -40px;
+    /* transform: rotateY(180deg); */
+    /* opacity: 0.4; */
+}
 .container{
     position: relative;
     width: 100%;
