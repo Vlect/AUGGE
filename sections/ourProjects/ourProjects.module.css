@@ -1,33 +1,38 @@
+.ourProjectsSection{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .sectionInfo{
   font-size: 14px;
   text-align: center;
   color:rgb(253, 195, 69,0.8);
   margin-top: 60px;
-  z-index: -14;
+  /* z-index: -14; */
 }
 .sectionInfo h1{
   color: white;
 }
 .projects {
-    position: relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 80px;
   width: 100%;
-  height: 100%;
+  height: 0%;
 }
 
 /*////////////////////////////////////////*/
-.cardButtons {
+.cardButtons{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 5px 8px;
   position: absolute;
-  z-index: 14;
-  top: 40%;
+  z-index: 10;
+  top: 150%;
 }
 
 .leftButton {
@@ -42,7 +47,7 @@
   position: absolute;
   transform: rotate(-45deg);
   top: 19px;
-  left: 14px;
+  left: 10px;
 }
 .leftButtonArrow div:nth-child(2) {
   top: 29px;
@@ -104,26 +109,37 @@
 .noActive{
   opacity: 0.6;
   position: absolute;
-  transform: translateX(100px);
-  z-index: 10;
+  transform: translateX(0px);
+  z-index: 9;
+  top:0;
 }
-.noActive:nth-child(even){
-  transform: translateX(-40px);
-}
+/* .noActive:nth-child(even){
+  transform: translateY(-20px) ;
+} */
 .noActive:nth-child(odd){
-  transform: translateX(40px);
+  transform: translateY(-20px) translateX(30px);
 }
 .active{
+  position: absolute;
+  /* left: 5rem; */
+  top: -200;
+  align-self:flex-start;
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.2);
-  z-index: 11;
+  z-index: 10;
 }
 
 .hexagonImage {
   position: absolute;
-  top: 37%;
-  left: 34%;
+  top: 20%;
+  left: 16%;
+}
+
+.hexagonImageYOY {
+  position: absolute;
+  top: 10%;
+  left: 4%;
 }
 
 /* .hexagonProject:nth-child(2) .hexBottom{
@@ -166,6 +182,7 @@
     height: 55px;
     margin: 20px 5px;
     top: 250px;
+    /* left: 43%; */
     /* display: flex; */
     flex-direction: row;
 }
@@ -187,7 +204,7 @@
 } */
 .activeWatchProject{
   opacity: 1;
-  transition-duration: 1s;
+  /* transition-duration: 1s; */
   transform: scale(1.08);
   z-index: 10;
 }
@@ -268,51 +285,8 @@
   -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.51);
 }
 
-@media (min-width: 768px) {
-  /* .serviceCard {
-    padding: 5px;
-    width: 30vw;
-    height: 80%;
-    margin-top: 110px;
-  } */
-  .cardButtons {
-    top: 40%;
-    z-index: 12;
-  }
-  .ourServicesSection{
-    padding-top: 30px;
-  }
-  .rightButton {
-    margin-right: 400px;
-  }
-  .leftButton {
-    margin-left: 400px;
-  }
-}
-
-@media (max-height: 576px) and (orientation:landscape) {
-  /* .serviceCard {
-    padding: 5px;
-    width: 30vw;
-    height: 80%;
-    margin-top: 110px;
-  } */
-  .sectionInfo{
-    margin-top: 0;
-  }
-  .projects {
-    margin-top: 60px;
-  }
-  .cardButtons {
-    top: 88%;
-  }
-  .ourServicesSection{
-    padding-top: 0px;
-  }
-  .rightButton {
-    margin-right: 100px;
-  }
-  .leftButton {
-    margin-left: 100px;
+@media (min-width:737px){
+  .cardButtons{
+    justify-content:space-around;
   }
 }

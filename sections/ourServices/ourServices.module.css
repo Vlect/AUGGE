@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  z-index: 8;
+  z-index: 10;
   padding-top: 80px;
 }
 
@@ -13,7 +13,7 @@
   /* z-index: 8; */
 }
 .sectionInfo h1{
-  color: #fcc500;
+  color: white;
 }
 
 .serviceCards {
@@ -35,7 +35,7 @@
   padding: 5px 8px;
   position: absolute;
   z-index: 11;
-  top: 53%;
+  top: 43%;
 }
 
 .leftButton {
@@ -94,6 +94,7 @@
   z-index: 9;
 } */
 
+
 .serviceCard {
   opacity: 0;
   position: absolute;
@@ -104,7 +105,7 @@
   flex-direction: column;
   width: 68%;
   height: 350px;
-  background-color: #797979;
+  /* background-color: #797979; */
   border-radius: 3px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
@@ -128,8 +129,11 @@
 }
 .active{
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transform: scale(1.08);
+}
+.image{
+  border-radius: 3px;
 }
 
 .serviceText {
@@ -162,7 +166,7 @@
   } */
   
   .cardButtons{
-    top: 28%;
+    top: 40%;
   }
 
   .serviceCards{
@@ -191,7 +195,7 @@
     margin-top: 110px;
   }
   .cardButtons {
-    top: 43%;
+    top: 40%;
   }
   .ourServicesSection{
     padding-top: 30px;
@@ -212,9 +216,11 @@
     margin-top: 200px;
     /* margin-bottom: 00px; */
   }
-  .cardButtons {
-    top: 36%;
+
+  .cardButtons{
+    top: 15%;
   }
+
   .ourServicesSection{
     padding-top: 0;
     padding-bottom: 700px;

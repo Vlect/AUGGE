@@ -6,7 +6,7 @@ interface navBarProps {}
 
 const NavBar: React.FC<navBarProps> = ({}) => {
   return (
-    <>
+    <div className={styles.navBar}>
       {/* <div className={styles.navBar}>
         <div className={styles.logo}>
           <div className={styles.hexagon}>
@@ -24,13 +24,13 @@ const NavBar: React.FC<navBarProps> = ({}) => {
         className={styles.fondoGlobal}
       >
         <Image 
-          src="/images/PAGE.svg"
-          width={200}
+          src="/images/MainLogo2.svg"
+          width={180}
           color="white"
-          height={200}
+          height={180}
         />
       </div>
-    </>
+    </div>
   );
 };
 

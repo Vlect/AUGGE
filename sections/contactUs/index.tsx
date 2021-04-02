@@ -86,19 +86,24 @@ const ContactUs: React.FC<contactUsprops> = ({}) => {
 
       <div className={styles.infoBlocks}>
         <div className={styles.infoBlock}>
-          <i className="fa fa-phone" aria-hidden="true"></i>
+          <i className="fa fa-map-marker" aria-hidden="true"></i>
           <p> - </p>
-          <h4>3046507832</h4>
-        </div>
-        <div className={styles.infoBlock}>
-          <i className="fa fa-envelope" aria-hidden="true"></i>
-          <p> - </p>
-          <h4>ceo@augge.com</h4>
+          <h4>Carrea 106 # 15 - 00</h4>
         </div>
         <div className={styles.infoBlock}>
           <i className="fa fa-map-marker" aria-hidden="true"></i>
           <p> - </p>
-          <h4>Cll 23 #45-65</h4>
+          <h4>Cali - Colombia</h4>
+        </div>
+        <div className={styles.infoBlock}>
+          <i className="fa fa-phone" aria-hidden="true"></i>
+          <p> - </p>
+          <h4>T. 3002920301</h4>
+        </div>
+        <div className={styles.infoBlock}>
+          <i className="fa fa-envelope" aria-hidden="true"></i>
+          <p> - </p>
+          <h4>info@augge.co</h4>
         </div>
       </div>
     </div>

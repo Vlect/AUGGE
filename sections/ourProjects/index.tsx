@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Image from "next/image";
 import styles from "./ourProjects.module.css";
 import { OurProjectsData } from "./../../components/imageSlider/SliderData";
@@ -56,9 +56,8 @@ const OurProjects: React.FC<ourProjectsProps> = ({ slides }) => {
       <div className={styles.projects}>
         {OurProjectsData.map((slide, index) => {
           return (
-            <>
+            <Fragment key={index} >
               <div
-                key={index}
                 className={`${styles.hexagonProject} ${
                   index === currentSlide ? `${styles.active}` : styles.noActive
                 }`}
@@ -68,14 +67,19 @@ const OurProjects: React.FC<ourProjectsProps> = ({ slides }) => {
                   <div className={styles.hexMiddle}></div>
                   <div className={styles.hexTop}></div>
                 </div>
-                <div className={styles.hexagonImage}>
-                  <Image
-                    src={slide.image}
-                    width={60}
-                    height={60}
-                    alt="YOY Vitaparques"
-                  />
-                </div>
+                <a
+                  href={slide.link}
+                  target="_blank"
+                >
+                  <div className={styles.hexagonImage}>
+                    <Image
+                      src={slide.image}
+                      width={130}
+                      height={130}
+                      alt={slide.alt}
+                    />
+                  </div>
+                </a>
               </div>
               <div
                 className={`${styles.watchProject} ${
@@ -99,7 +103,7 @@ const OurProjects: React.FC<ourProjectsProps> = ({ slides }) => {
                   </a>
                 )}
               </div>
-            </>
+            </Fragment>
           );
         })}
 

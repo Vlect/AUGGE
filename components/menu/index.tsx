@@ -32,7 +32,7 @@ const Menu: React.FC<menuProps> = ({children}:any, initialTab) => {
     router.push(`${router.pathname}?tab=${Slugify(activeTab)}`, undefined, {shallow:true})
   }, [activeTab])
 
-  // console.log(TabImages)
+  console.log(TabImages)
 
   return (
     <div className={styles.menuContainer}>
@@ -43,19 +43,22 @@ const Menu: React.FC<menuProps> = ({children}:any, initialTab) => {
             <div key={label} className={`${styles.tab} ${label == activeTab ? styles.current : ""}`}>
               <div className={styles.hexagon}>
                 <div className={styles.hexBottom}></div>
-                <div className={styles.hexMiddle}></div>
+                <div className={styles.hexMiddle}>
+                  <a href="#" onClick={(e) => handleClick(e, label) }>
+                    {/* <div className={styles.iconSection}> */}
+                      {/* <Image
+                        src={TabImages[index].image}
+                        height={30}
+                        width={30}
+                        alt="Nuestros servicios"
+                      /> */}
+                      <i className={`${TabImages[index].image} ${styles.iconTab}`} aria-hidden="true"></i>
+                    {/* </div> */}
+                  </a> 
+                </div>
                 <div className={styles.hexTop}></div>
               </div>
-              <a href="#" onClick={(e) => handleClick(e, label) }>
-                <div className={styles.iconSection}>
-                  <Image
-                    src={TabImages[index].image}
-                    height={30}
-                    width={30}
-                    alt="Nuestros servicios"
-                  />
-                </div>
-              </a> 
+              
             </div>
           );
         })}

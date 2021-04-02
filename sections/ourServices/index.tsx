@@ -25,7 +25,7 @@ const OurServices: React.FC<ourServices> = ({slides}) => {
     <div className={styles.ourServicesSection}>
       <div className={styles.sectionInfo}>
         <h1>Nuestras Compañias</h1>
-        {/* <p>Nuestras compañias generan AUGGE inmobiliario</p> */}
+        <p>Generan AUGGE inmobiliario</p>
       </div>
       <div className={styles.cardButtons}>
 
@@ -61,17 +61,19 @@ const OurServices: React.FC<ourServices> = ({slides}) => {
             <div key={index} className={ `${styles.serviceCard} ${index === currentSlide ? `${styles.active}` : styles.noActive}`}>
               {/* {index === currentSlide && (
                 <> */}
-                  <h1>{slide.title}</h1>
-                  <Image
-                    className={styles.image}
-                    src={slide.image}
-                    height={100}
-                    width={100}
-                    alt="logo-services"
-                  />
-                  <p className={styles.serviceText}>
+                  {/* <h1>{slide.title}</h1> */}
+                  <a href={slide.link} target="_blank" className={styles.link}>
+                    <Image
+                      className={styles.image}
+                      src={slide.image}
+                      height={400}
+                      width={400}
+                      alt="logo-services"
+                    />
+                  </a>
+                  {/* <p className={styles.serviceText}>
                     {slide.description}
-                  </p>
+                  </p> */}
                 {/* </>
               )} */}
             </div>
