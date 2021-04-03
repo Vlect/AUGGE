@@ -5,7 +5,7 @@ import { OurProjectsData } from "./../../components/imageSlider/SliderData";
 
 interface ourProjectsProps {
   label?: string;
-  slides;
+  slides?;
 }
 
 const OurProjects: React.FC<ourProjectsProps> = ({ slides }) => {

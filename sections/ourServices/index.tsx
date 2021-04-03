@@ -5,7 +5,7 @@ import { OurServicesData } from "../../components/imageSlider/SliderData";
 
 interface ourServices {
   label?:string;
-  slides
+  slides?;
 }
 
 const OurServices: React.FC<ourServices> = ({slides}) => {
